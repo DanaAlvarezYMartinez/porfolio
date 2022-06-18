@@ -1,8 +1,27 @@
+html {
+  overflow: hidden;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
 .parallax {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
   height: 100vh;
-  width: 100%;
+  width: 95%;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 5%;
+  background-color: #0c0e15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #stars {
@@ -568,7 +587,7 @@
   font-weight: 300;
   font-size: 50px;
   letter-spacing: 10px;
-  width: 100%;
+  width: 90%;
   height: 100%;
   flex-direction: column;
 }
@@ -576,7 +595,6 @@
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 #title h1 {
   background: -webkit-linear-gradient(white, #38495a);
@@ -584,6 +602,46 @@
   font-weight: 800;
   font-size: 70px;
   color: #fff;
+}
+
+.header-btn-container img {
+  width: 40px;
+}
+
+.header-btn-container {
+  right: 30px;
+  position:fixed;
+  top: 60px;
+}
+
+.header-btn-container :hover{
+  cursor: pointer;
+}
+
+.header-btn {
+  color: #fff !important;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 2rem 1.5rem;
+}
+
+.main-btn {
+  color: #fff !important;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 10rem;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 17%);
+  transition: all 0.2s;
+  margin-top: 2.2rem;
+  padding: 0.5rem 4rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.clickable-element{
+  cursor: pointer;
 }
 
 @keyframes animStar {
@@ -595,11 +653,45 @@
   }
 }
 
-
-main {
-  height: 100%;
-  width: 100%;
+ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+li {
+  display: inline-block;
+  margin: 15px 0;
+}
+svg {
+  width: 3em;
+  height: 3em;
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 1;
 }
 
+
+.header-btn img:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
