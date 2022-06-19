@@ -1,6 +1,5 @@
 document.addEventListener('click', (e) => {
-    console.log(e.target.classList)
     if(e.target.classList.contains('rocket')){
-        console.log('g')
+        document.getElementsByTagName('header')[0].classList.toggle('hidden');
     }
 })
