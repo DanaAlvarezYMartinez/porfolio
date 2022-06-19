@@ -725,7 +725,7 @@ svg {
   bottom: 0;
   position: absolute;
   height: 27vmin;
-  background: url('/images/mars.svg') no-repeat bottom center;
+  background: url('./images/mars.svg') no-repeat bottom center;
   background-size: cover;
 }
 
