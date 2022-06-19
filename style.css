@@ -759,7 +759,7 @@ svg {
   width: 290px;
   height: 60px;
   bottom: 322px;
-    left: 232px;
+  left: 232px;
   transform: rotate(350deg);
   position: absolute;
 }
@@ -786,26 +786,26 @@ svg {
   align-items: center;
 }
 
-.sun{
+.sun {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #f6b40f;
 }
 
-.nav-bar{
+.nav-bar {
   display: flex;
-  width: 90%;
+  width: 88%;
   height: 80px;
   top: 38px;
   z-index: 2;
-  background-color: red;
   position: fixed;
-  background-color: #0c0e15;
+  left: 5%;
+  background: hsl(0 0% 0% / 0.3);
   align-items: center;
 }
 
-.nav-bar ul{
+.nav-bar ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -813,8 +813,7 @@ svg {
   margin: 0;
 }
 
-
-.nav-bar ul li a{
+.nav-bar ul li a {
   background: -webkit-linear-gradient(white, #9d9b96);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -824,15 +823,170 @@ svg {
   letter-spacing: 10px;
 }
 
-.nav-bar ul li:hover{
+.nav-bar ul li:hover {
   padding: 1rem;
   border: 1px solid #fff;
   border-radius: 8px;
 }
 
-@media (max-width:425px) {
-  .nav-bar ul{
+@media (max-width: 425px) {
+  .nav-bar ul {
     flex-direction: column;
     align-items: center;
   }
 }
+
+/* cow */
+/* 
+.cow-container {
+  min-height: 300px;
+  padding: 70px 100px;
+  z-index: 1;
+}
+
+.cow-body {
+  margin: auto;
+  background: #fff;
+  border: 6px solid #222222;
+  width:290px;
+  height: 202px;
+  display: inline-block;
+  position: relative;
+  border-radius: 200px 100px 200px 200px;
+  -moz-animation: floating-cow 5s linear infinite alternate;
+  -webkit-animation: floating-cow 5s linear infinite alternate;
+  animation: floating-cow 5s linear infinite alternate;
+}
+
+.head {
+  position: absolute;
+  right: -60px;
+  top: -27px;
+  -moz-animation: head-bob 2s linear infinite alternate;
+  -webkit-animation: head-bob 2s linear infinite alternate;
+  animation: head-bob 2s linear infinite alternate;
+}
+
+.body-spot {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  background: #444852;
+  width: 160px;
+  height: 130px;
+  border-radius: 117px 0 96px 28px;
+  z-index: 2;
+}
+
+.leg {
+  border:6px solid #222222;
+  border-top: 0;
+  height: 94px;
+  width: 16px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: -55px;
+  border-radius: 0 0 10px 10px;
+}
+
+.leg .left{
+  left: 45px;
+}
+
+.leg .right{
+  right: 55px; 
+}
+
+.hoof {
+  background: #B8A381;
+  height: 20px;
+  width: 16px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 1px 1px;
+}
+
+.tail {
+  margin-top: 60px;
+  border: 6px solid #222222;
+  border-top: 0;
+  height: 60px;
+  width: 8px;
+  background: #fff;
+  display: inline-block;
+  transform: rotate(60deg);
+  transform-origin: top;
+  border-radius: 20px 0 100px 20px;
+  -moz-animation: tail-wagging .2s linear infinite alternate;
+  -webkit-animation: tail-wagging .2s linear infinite alternate;
+  animation: tail-wagging .2s linear infinite alternate;
+}
+
+.cow-head {
+  background:#fff;
+  border:6px solid #222222;
+  height: 143px;
+  width: 105px;
+  border-radius: 27px 27px 60px 60px;
+  position: absolute;
+  right: 0;
+}
+
+.spot {
+  background: #444852;
+  width: 50px;
+  height: 70px;
+  border-radius: 16px 0 35px 0;
+}
+
+.eyes {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+}
+
+.eyes .eye {
+  background: #222222;
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.eye .left{
+  left: 25px;
+}
+
+.eye .right{
+  right: 25px;
+}
+
+.nose {
+  background: #fdcad5;
+  height: 50px;
+  width:105px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 50px 50px;
+}
+
+.nose  .nostrils{
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+}
+
+.nose  .nostrils .nostril{
+
+}
+
+
+$white        : #ffffff;
+$black        : #222222;
+$cow-white    : #f8f8ff;
+$cow-nose     : #fdcad5;
+$cow-helmet   : #DCDCDC;
+$brown-light  : #B8A381;
+$space        : #313640; */
