@@ -990,3 +990,72 @@ $cow-nose     : #fdcad5;
 $cow-helmet   : #DCDCDC;
 $brown-light  : #B8A381;
 $space        : #313640; */
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.about-me-container {
+  width: 80%;
+  height: 80vh;
+  background: hsl(0 0% 0% / 0.3);
+  border-radius: 12px;
+  border: 2px solid #fff;
+}
+
+.astronaut-about-me-container {
+  position: absolute;
+  bottom: 27px;
+  left: 20px;
+}
+
+.astronaut-about-me-container img {
+  width: 256px;
+  z-index: 99;
+}
+
+.am-title-container .svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.am-title-container .svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.am-title-container:is(.svg-icon path, .svg-icon polygon, .svg-icon rect) {
+  fill: red;
+}
+
+.about-me-container .mirror {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.am-title-container {
+  margin-top: 27px;
+  margin-left: 27px;
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me-container .am-title-container h1 {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 45px;
+  color: #fff;
+}
+
+.am-info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
