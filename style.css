@@ -22,6 +22,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 #stars {
@@ -580,7 +581,8 @@ main {
 #title {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  top: 250px;
   align-items: center;
   text-align: center;
   font-family: 'lato', sans-serif;
@@ -591,16 +593,25 @@ main {
   height: 100%;
   flex-direction: column;
 }
-#title p {
+#title h3 {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 40px;
 }
 #title h1 {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   font-weight: 800;
   font-size: 70px;
+  color: #fff;
+}
+
+#title p {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  font-weight: 300;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -694,4 +705,36 @@ svg {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+
+.hidden{
+  display: none;
+}
+
+.mars {
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  height: 27vmin;
+  background: url('/images/mars.svg') no-repeat bottom center;
+  background-size: cover;
+}
+
+.info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  border: solid 2px #fff;
+  width: 40%;
+  padding:20px 10px;
+  border-radius: 12px;
+}
+
+
+
+.info-container img{
+  width: 3rem;
 }
