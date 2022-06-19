@@ -8,4 +8,10 @@ document.addEventListener('click', (e) => {
         document.getElementById('about-me').classList.remove('hidden');
         document.getElementsByTagName('header')[0].classList.add('hidden');
     }
+
+    if(e.target.classList.contains('bb8')){
+        document.getElementById('about-me').classList.add('hidden');
+        document.getElementById('home').classList.remove('hidden');
+        document.getElementsByTagName('header')[0].classList.add('hidden');
+    }
 })
