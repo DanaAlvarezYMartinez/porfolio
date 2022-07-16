@@ -991,7 +991,7 @@ $cow-helmet   : #DCDCDC;
 $brown-light  : #B8A381;
 $space        : #313640; */
 
-.about-me {
+.about-me, .projects-container, .skills-container, .hobbies-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1002,7 +1002,7 @@ $space        : #313640; */
 .about-me-container {
   width: 80%;
   height: 80vh;
-  background: hsl(0 0% 0% / 0.3);
+  background: hsl(0 0% 0% / 0.8);
   border-radius: 12px;
   border: 2px solid #fff;
 }
@@ -1038,12 +1038,35 @@ $space        : #313640; */
   fill: red;
 }
 
+/* title container */
+
+.title-container .svg-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.title-container :is(.svg-icon path, .svg-icon polygon, .svg-icon rect) {
+  fill: red;
+}
+
+.title-container svg{
+  stroke: red;
+}
+
+
+.title-container .svg-icon circle {
+  stroke: red;
+  stroke-width: 1;
+}
+
+/* ---------------- */
+
 .about-me-container .mirror {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-.am-title-container {
+.am-title-container, .title-container {
   margin-top: 27px;
   margin-left: 27px;
   width: 28%;
@@ -1052,7 +1075,11 @@ $space        : #313640; */
   align-items: center;
 }
 
-.about-me-container .am-title-container h1 {
+.title-container{
+  width: 17%;
+}
+
+:is(.about-me-container .am-title-container, .about-me-container .title-container)  h1 {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   font-weight: 600;
@@ -1064,6 +1091,21 @@ $space        : #313640; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.am-info-container p{
+  font-family: 'lato', sans-serif;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  width: 80%;
+  text-align: center;
+}
+
+.am-info-container b{
+  text-decoration: underline;
 }
 
 .bb8 {
@@ -1111,4 +1153,16 @@ $space        : #313640; */
 
 .bb8:hover .bb8-text {
   visibility: visible;
+}
+
+/* projects */
+.projects-wrapper{
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+
+.project-item{
+  width: ;
 }
